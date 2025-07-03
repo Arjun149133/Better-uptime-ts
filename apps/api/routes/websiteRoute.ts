@@ -56,7 +56,7 @@ websiteRouter.get("/status/:websiteId", authMiddleware, async (req: Request, res
             })
             return
         }
-    
+        
         res.json({
             url: website.url,
             id: website.id,

@@ -74,7 +74,7 @@ authRouter.post("/signin",  async (req: Request, res: Response) => {
         const isPasswordCorrect = await bcrypt.compare(password, passwordInDb);
 
         if (!isPasswordCorrect) {
-            res.status(400).json({
+            res.status(403).json({
                 error: "wrong password!"
             })
             return
