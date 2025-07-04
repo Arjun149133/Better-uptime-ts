@@ -58,5 +58,6 @@ async function fetchWebsite(url: string, website_id: string) {
             resolve();
         })
     })
-
 }
+
+main()
